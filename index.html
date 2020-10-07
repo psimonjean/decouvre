@@ -17,9 +17,13 @@
 <body>
         <div class="jumbotron backgroud-color-couleur2 color-3">
             <h1 class="display-4">Hello, world!</h1>
-            <img src="http://lorempixel.com/400/200" class="img-fluid" alt="Responsive image">
-            <button class="btn btn-secondary btn-lg" href="#" role="button">Learn more</button>
+            <img id="photo" src="http://lorempixel.com/400/200" class="img-fluid" alt="Responsive image">
+            <button onclick="setImageUrl();" class ="btn btn-secondary btn-lg" role="button">Learn more</button>
     </div>
+    <script>
+        function setImageUrl(){
+            console.log(faker.imageUrl);
+        }
 </body>
 
 </html>
